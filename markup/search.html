@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle search</title>
+</head>
+<body>
+    <header>Выберите автомобиль своей мечты</header>
+    <main>
+        <form action="https://fom.in.ua/echo" method="post">
+            <fieldset>
+                <legend>Тип кузова</legend>
+                <select  name="cartype" id="cartype">
+                    <option value="type1">Универсал</option>
+                    <option value="type2">Внедорожник</option>
+                    <option value="type3">Минивен</option>
+                    <option value="type4">Лифтбэк</option>
+                    <option value="type5">Микровэн</option>
+                    <option value="type6" selected>Седан</option>
+                    <option value="type7">Купе</option>
+                    <option value="type8">Пикап</option>
+                    <option value="type9">Родстер</option>
+                    <option value="type10">Хетчбек</option>
+                    <option value="type11">Лимузин</option>
+                    <option value="type12">Кабриолет</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                    <legend>Марка авто</legend>
+                <select name="mark" id="mark">
+                    <option value="mark1">Audi</option>
+                    <option value="mark2">BMW</option>
+                    <option value="mark3">Chevrolet</option>
+                    <option value="mark4">Ford</option>
+                    <option value="mark5">Honda</option>
+                    <option value="mark6">Hyundai</option>
+                    <option value="mark7">Lexus</option>
+                    <option value="mark8">KIA</option>
+                    <option value="mark9">Mercedes-Benz</option>
+                    <option value="mark10">Mazda</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Страна производитель</legend>
+                <select  name="country" id="country">
+                    <option value="country1">Германия</option>
+                    <option value="country2">Япония</option>
+                    <option value="country3">Корея</option>
+                    <option value="country4">США</option>
+                    <option value="country5">Италия</option>
+                    <option value="country6">Франция</option>
+                    <option value="country7">Чехия</option>
+                    <option value="country8">Китай</option>
+                    <option value="country9">Англия</option>
+                    <option value="country10">Аргентина</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Цена</legend>
+                <b>От</b>
+                <select name="price" id="price">
+                    <option value="price1">$0</option>
+                    <option value="price2">$1000</option>
+                    <option value="price3">$5000</option>
+                    <option value="price4">$10000</option>
+                    <option value="price5">$20000</option>
+                </select>
+                <b>До</b>
+                <select name="topprice" id="topprice">
+                    <option value="topprice1">$1000</option>
+                    <option value="topprice2">$5000</option>
+                    <option value="topprice3">$10000</option>
+                    <option value="topprice4">$10000</option>
+                    <option value="topprice5" selected>$200000</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Год</legend>
+                <b>От</b>
+                <select name="startyear" id="startyear">
+                    <option value="startyear1">2004</option>
+                    <option value="startyear2">2005</option>
+                    <option value="startyear3">2006</option>
+                    <option value="startyear4">2007</option>
+                    <option value="startyear5">2008</option>
+                    <option value="startyear6">2009</option>
+                    <option value="startyear7">2010</option>
+                    <option value="startyear8">2011</option>
+                    <option value="startyear9">2012</option>
+                    <option value="startyear10">2013</option>
+                    <option value="startyear11">2014</option>
+                    <option value="startyear12">2015</option>
+                    <option value="startyear13">2016</option>
+                    <option value="startyear14">2017</option>
+                    <option value="startyear15">2018</option>
+                    <option value="startyear16">2019</option>
+                    <option value="startyear17">2020</option>
+                    <option value="startyear18">2021</option>
+                    <option value="startyear19">2022</option>
+                    <option value="startyear20">2023</option>
+                </select>
+                <b>До</b>
+                <select name="endyear" id="endyear">
+                    <option value="endyear1">2004</option>
+                    <option value="endyear2">2005</option>
+                    <option value="endyear3">2006</option>
+                    <option value="endyear4">2007</option>
+                    <option value="endyear5">2008</option>
+                    <option value="endyear6">2009</option>
+                    <option value="endyear7">2010</option>
+                    <option value="endyear8">2011</option>
+                    <option value="endyear9">2012</option>
+                    <option value="endyear10">2013</option>
+                    <option value="endyear11">2014</option>
+                    <option value="endyear12">2015</option>
+                    <option value="endyear13">2016</option>
+                    <option value="endyear14">2017</option>
+                    <option value="endyear15">2018</option>
+                    <option value="endyear16">2019</option>
+                    <option value="endyear17">2020</option>
+                    <option value="endyear18">2021</option>
+                    <option value="endyear19">2022</option>
+                    <option value="endyear20" selected>2023</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Состояние</legend>
+                <label for="state1">Не битые</label>
+                <input type="checkbox" id="state1" name="state1">
+                <label for="state2">Восстановленные</label>
+                <input type="checkbox" id="state2" name="state2">
+                <label for="state3">Битые</label>
+                <input type="checkbox" id="state3" name="state3">
+                <label for="state4">Не на ходу</label>
+                <input type="checkbox" id="state4" name="state4">
+            </fieldset>
+            <fieldset>
+                <legend>Тип топлива</legend>
+                <label for="fuel1">Бензин</label>
+                <input type="checkbox" id="fuel1" name="fuel1">
+                <label for="fuel2">Дизель</label>
+                <input type="checkbox" id="fuel2" name="fuel2">
+                <label for="fuel3">Газ</label>
+                <input type="checkbox" id="fuel3" name="fuel3">
+                <label for="fuel4">Газ\Бензин</label>
+                <input type="checkbox" id="fuel4" name="fuel4">
+                <label for="fuel5">Гибрид</label>
+                <input type="checkbox" id="fuel5" name="fuel5">
+                <label for="fuel6">Электро</label>
+                <input type="checkbox" id="fuel6" name="fuel6">
+                <label for="fuel7">Другое</label>
+                <input type="checkbox" id="fuel7" name="fuel7">
+            </fieldset>
+            <fieldset>
+                <legend>Тип КПП</legend>
+                <Select name="gear" id="gear">
+                    <option value="gear1">Механическая КПП</option>
+                    <option value="gaer2">Автоматическая КПП</option>
+                </Select>
+            </fieldset>
+            <fieldset>
+                <legend>Цвет</legend>
+                <label for="color1">Красный</label>
+                <input type="checkbox" id="color1" name="color1">
+                <label for="color2">Черный</label>
+                <input type="checkbox" id="color2" name="color2">
+                <label for="color3">Белый</label>
+                <input type="checkbox" id="color3" name="color3">
+                <label for="color4">Зеленый</label>
+                <input type="checkbox" id="color4" name="color4">
+                <label for="color5">Синий</label>
+                <input type="checkbox" id="color5" name="color5">
+                <label for="color6">Фиолетовый</label>
+                <input type="checkbox" id="color6" name="color6">
+                <label for="color7">Жёлтый</label>
+                <input type="checkbox" id="color7" name="color7">
+            </fieldset>
+            <fieldset>
+                <legend>Комфорт</legend>
+                <label for="comfort1">Кожаный салон</label>
+                <input type="checkbox" id="comfort1" name="comfort1">
+                <label for="comfort2">Вентиляция сидений</label>
+                <input type="checkbox" id="comfort2" name="comfort2">
+                <label for="comfort3">Климат-контроль</label>
+                <input type="checkbox" id="comfort3" name="comfort3">
+                <label for="comfort4">Наличие люка</label>
+                <input type="checkbox" id="comfort4" name="comfort4">
+                <label for="comfort5">Регулировка руля</label>
+                <input type="checkbox" id="comfort5" name="comfort5">
+            </fieldset>
+            <input type="submit" value="Поиск">
+            <input type="reset" value="Сброс">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
